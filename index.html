@@ -4,48 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- font awesome and google fonts -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
+    <title>Love Maths Walkthrough</title>
 </head>
 <body>
     <h1 class="heading">
-        <img class="logo" src ="assets/images/logo.png" alt="logo"> Love Maths
+        <img class="logo" src="assets/images/logo.png" alt="Love Maths Logo">Love Maths
     </h1>
-
     <div class="game-area">
         <div class="controls-area">
-            <button data-type="addition" class="btn btn--big btn--green">
+            <button class="btn btn--big btn--green" data-type="addition">
                 <i class="fas fa-plus"></i>
             </button>
-            <button data-type="subtract" class="btn btn--big btn--blue">
+            <button class="btn btn--big btn--blue" data-type="subtract">
                 <i class="fas fa-minus"></i>
             </button>
-            <button data-type="multiply" class="btn btn--big btn--orange">
+            <button class="btn btn--big btn--orange" data-type="multiply">
                 <i class="fas fa-times"></i>
             </button>
-            <button data-type="division" class="btn btn--big btn--red">
+            <button class="btn btn--big btn--red" data-type="division">
                 <i class="fas fa-divide"></i>
             </button>
         </div>
         <div class="question-area">
             <span id="operand1">0</span>
-            <span id="operator">x</span>
-            <span id="operad2">0</span>
+            <span id="operator">X</span>
+            <span id="operand2">0</span>
             <span>=</span>
             <p class="answer-message">Enter Answer:</p>
-            <input id="answer-box" type="number">
+            <input type="number" id="answer-box">
         </div>
-        <button data-type="submit" class="btn btn--gray">Submit Answer</button>
+        <button class="btn btn--gray" data-type="submit">Submit Answer</button>
     </div>
-
     <div class="score-area">
-        <p class="scores">Correct Answers <span id="score">0</span></p>
-        <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
+        <p class="scores">Correct Answers: <span id="score">0</span></p>
+        <p class="scores">Incorrect Answers: <span id="incorrect">0</span></p>
+
     </div>
-    
-    <script src="assets/js/script.js"></script>
+   <script src="assets/js/script.js"></script> 
 </body>
 </html>
